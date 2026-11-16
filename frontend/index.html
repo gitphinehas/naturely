@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Naturbeobachtungen in deiner Umgebung – NATURELY</title>
+  <meta name="description" content="NATURELY – Naturbeobachtungen in deiner Umgebung entdecken.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#inhalt">Zum Inhalt springen</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="index.html">NATURELY</a>
+      <nav aria-label="Hauptnavigation">
+        <ul class="nav">
+        <li><a href="index.html#suche">Entdecken</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a class="btn btn--accent" href="registrierung.html">Registrieren</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inhalt">
+    <section class="hero">
+      <div class="wrap">
+        <div>
+          <h1>Die Natur beginnt direkt vor deiner Haustür.</h1>
+          <p>Entdecke Tiere, Pflanzen und andere faszinierende Naturbeobachtungen in deiner Umgebung.</p>
+        </div>
+        <div class="hero__visual" role="img" aria-label="Platzhalter für ein Naturfoto"></div>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <section class="search" id="suche" aria-label="Suche">
+        <form id="search-form" novalidate>
+          <div class="field">
+            <label for="address">Adresse oder Ort</label>
+            <input id="address" name="address" type="text" placeholder="z. B. Tiergarten, Berlin" autocomplete="street-address">
+          </div>
+          <div class="field">
+            <label for="radius">Radius</label>
+            <select id="radius" name="radius">
+              <option value="1">1 km</option>
+              <option value="5" selected>5 km</option>
+              <option value="10">10 km</option>
+              <option value="25">25 km</option>
+            </select>
+          </div>
+          <button class="btn" type="submit">Natur entdecken</button>
+        </form>
+      </section>
+
+      <section aria-labelledby="ergebnisse-titel">
+        <div class="results-head">
+          <h2 id="ergebnisse-titel">Entdeckungen in deiner Nähe</h2>
+          <span id="count"></span>
+        </div>
+        <p id="status" class="status" role="status" aria-live="polite">Gib einen Ort ein, um Beobachtungen zu finden.</p>
+        <ul id="results" class="grid"></ul>
+        <div class="more"><button id="load-more" class="btn btn--ghost" type="button" hidden>Weitere Beobachtungen laden</button></div>
+      </section>
+      <p><small>Daten: <a href="https://www.inaturalist.org/" target="_blank" rel="noopener noreferrer">iNaturalist</a> · Geocoding: © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap</a>-Mitwirkende. Bildrechte liegen bei den jeweiligen Fotograf:innen.</small></p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© 2026 NATURELY – Uni-Projekt</p>
+      <nav aria-label="Rechtliches"><ul>
+        <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="datenschutz.html">Datenschutz</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul></nav>
+    </div>
+  </footer>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

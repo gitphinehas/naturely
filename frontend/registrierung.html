@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registrierung – NATURELY</title>
+  <meta name="description" content="NATURELY – Naturbeobachtungen in deiner Umgebung entdecken.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#inhalt">Zum Inhalt springen</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="index.html">NATURELY</a>
+      <nav aria-label="Hauptnavigation">
+        <ul class="nav">
+        <li><a href="index.html#suche">Entdecken</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a class="btn btn--accent" href="registrierung.html" aria-current="page">Registrieren</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inhalt">
+    <div class="wrap page">
+      <div class="panel narrow">
+        <h1>Konto erstellen</h1>
+        <p>Registriere dich, um später eigene Beobachtungen einzutragen. (Formular noch ohne Funktion.)</p>
+        <form data-static action="#" method="post">
+          <div class="field"><label for="name">Anzeigename</label><input id="name" name="name" type="text" required autocomplete="nickname"></div>
+          <div class="field"><label for="email">E-Mail</label><input id="email" name="email" type="email" required autocomplete="email"></div>
+          <div class="field"><label for="password">Passwort</label><input id="password" name="password" type="password" required minlength="8" autocomplete="new-password"></div>
+          <div class="field"><label for="password2">Passwort wiederholen</label><input id="password2" name="password2" type="password" required minlength="8" autocomplete="new-password"></div>
+          <div class="field"><label class="check"><input type="checkbox" name="privacy" required> <span>Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> gelesen.</span></label></div>
+          <button class="btn" type="submit">Registrieren</button>
+          <p class="form-note" role="status"></p>
+        </form>
+        <p>Bereits registriert? <a href="login.html">Zum Login</a></p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© 2026 NATURELY – Uni-Projekt</p>
+      <nav aria-label="Rechtliches"><ul>
+        <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="datenschutz.html">Datenschutz</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul></nav>
+    </div>
+  </footer>
+  <script type="module" src="js/forms.js"></script>
+</body>
+</html>

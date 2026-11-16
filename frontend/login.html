@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login – NATURELY</title>
+  <meta name="description" content="NATURELY – Naturbeobachtungen in deiner Umgebung entdecken.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#inhalt">Zum Inhalt springen</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="index.html">NATURELY</a>
+      <nav aria-label="Hauptnavigation">
+        <ul class="nav">
+        <li><a href="index.html#suche">Entdecken</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="login.html" aria-current="page">Login</a></li>
+        <li><a class="btn btn--accent" href="registrierung.html">Registrieren</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inhalt">
+    <div class="wrap page">
+      <div class="panel narrow">
+        <h1>Anmelden</h1>
+        <p>Willkommen zurück! (Formular noch ohne Funktion.)</p>
+        <form data-static action="#" method="post">
+          <div class="field"><label for="email">E-Mail</label><input id="email" name="email" type="email" required autocomplete="email"></div>
+          <div class="field"><label for="password">Passwort</label><input id="password" name="password" type="password" required autocomplete="current-password"></div>
+          <button class="btn" type="submit">Anmelden</button>
+          <p class="form-note" role="status"></p>
+        </form>
+        <p>Noch kein Konto? <a href="registrierung.html">Jetzt registrieren</a></p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© 2026 NATURELY – Uni-Projekt</p>
+      <nav aria-label="Rechtliches"><ul>
+        <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="datenschutz.html">Datenschutz</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul></nav>
+    </div>
+  </footer>
+  <script type="module" src="js/forms.js"></script>
+</body>
+</html>
