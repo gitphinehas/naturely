@@ -166,6 +166,43 @@ img {
   color: var(--forest);
 }
 
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  border: 0;
+  border-radius: 10px;
+  background: transparent;
+  color: var(--cream);
+  cursor: pointer;
+}
+
+.nav-toggle__bar {
+  display: block;
+  width: 1.5rem;
+  height: 2px;
+  border-radius: 2px;
+  background: currentcolor;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.nav-toggle[aria-expanded='true'] .nav-toggle__bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.nav-toggle[aria-expanded='true'] .nav-toggle__bar:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle[aria-expanded='true'] .nav-toggle__bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
 .site-footer {
   background: var(--forest);
   color: var(--moss);
@@ -403,7 +440,7 @@ textarea:focus {
 .hero__visual {
   aspect-ratio: 4 / 3;
   border-radius: var(--radius);
-  visibility: visible;
+  visibility: hidden;
   /* Platzhalter – später durch Foto ersetzen: background: url('../assets/img/hero.jpg') center / cover; */
   background: radial-gradient(circle at 70% 25%, var(--ochre) 0 9%, transparent 10%), linear-gradient(160deg, var(--sage), var(--moss) 55%, #7f9a78);
 }
@@ -485,10 +522,12 @@ textarea:focus {
   .hero .wrap {
     grid-template-columns: 1fr;
     padding-block: 2.5rem;
+    display: none;
   }
 
   .hero__visual {
     aspect-ratio: 16 / 7;
+    display: none;
   }
 
   .search form {
@@ -497,6 +536,48 @@ textarea:focus {
 
   .search .field:first-child {
     grid-column: 1 / -1;
+  }
+
+  .search {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (min-width: 601px) {
+  .site-header .wrap,
+  .nav {
+    flex-wrap: nowrap;
+  }
+}
+
+@media (max-width: 600px) {
+  .js .nav-toggle {
+    display: flex;
+  }
+
+  .site-nav {
+    flex-basis: 100%;
+  }
+
+  .js .site-nav:not(.is-open) {
+    display: none;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding-bottom: 0.5rem;
+  }
+
+  .nav a {
+    display: block;
+    padding: 0.7rem 0;
+    text-align: center;
+  }
+
+  .nav .btn {
+    margin-top: 0.5rem;
   }
 }
 
