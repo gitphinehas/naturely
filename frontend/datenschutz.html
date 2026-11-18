@@ -6,13 +6,19 @@
   <title>Datenschutzerklärung – NATURELY</title>
   <meta name="description" content="NATURELY – Naturbeobachtungen in deiner Umgebung entdecken.">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/nav.js" defer></script>
 </head>
 <body>
   <a class="skip" href="#inhalt">Zum Inhalt springen</a>
   <header class="site-header">
     <div class="wrap">
       <a class="logo" href="index.html">NATURELY</a>
-      <nav aria-label="Hauptnavigation">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menü öffnen">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation">
         <ul class="nav">
         <li><a href="index.html#suche">Entdecken</a></li>
         <li><a href="kontakt.html">Kontakt</a></li>
