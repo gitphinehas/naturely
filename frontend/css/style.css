@@ -129,13 +129,22 @@ img {
   justify-content: space-between;
   gap: 0.5rem 1.5rem;
   padding-block: 0.8rem;
+  min-height: 4.5rem;
 }
 
 .logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   font: 700 1.4rem var(--font-head);
   letter-spacing: 0.08em;
   color: var(--cream);
   text-decoration: none;
+}
+
+.logo img {
+  height: 1em;
+  width: auto;
 }
 
 .nav {
