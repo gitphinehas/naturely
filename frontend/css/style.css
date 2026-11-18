@@ -82,7 +82,7 @@ a {
 }
  
 a:hover {
-  color: var(--forest);
+  color: var(--ochre);
 }
  
 :focus-visible {
