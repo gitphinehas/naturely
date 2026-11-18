@@ -491,6 +491,14 @@ textarea:focus {
   text-align: center;
 }
 
+.credits {
+  margin: 3rem 0 2rem;
+}
+
+main:has(.credits) + .site-footer {
+  margin-top: 0;
+}
+
 .page {
   padding-block: 3rem;
 }
